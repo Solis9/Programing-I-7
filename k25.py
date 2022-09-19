@@ -1,4 +1,4 @@
-from stanfordkarel import *
+pythofrom stanfordkarel import *
 
 
 def main():
