@@ -43,37 +43,36 @@ class ktools:
     self.m()
     self.put()
 
-  def carpet(self):
+  def h(self):
+    """Print H using beepers"""
+    self.tl()
+    self.put5()
+    self.tr()
+    self.m()
+    self.m()
+    self.m()
+    self.tr()
+    self.put5()
+    self.ta()
     self.m()
     self.m()
     self.tl()
     self.m()
     self.put2()
-    self.m()
-    self.put2()
-    self.m()
-    self.put2()
-    self.m()
-    self.put2()
-    self.tr()
-    self.m()
-    self.put5()
-    self.m()
-    self.put()
-    self.tr()
-    self.m()
-    self.put5()
-    self.m()
-    self.put2()
     self.tl()
     self.m()
-    self.put5()
-    self.put()
+    self.m()
+    self.tl()
+    self.m()
+    self.m()
+    self.m()
+    self.m()
     
+
 def main():
     """ Karel code goes here! """
     kt = ktools()
-    kt.carpet()
+    
     pass
 
 

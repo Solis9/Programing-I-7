@@ -1,4 +1,5 @@
 from stanfordkarel import *
+from time import sleep
 
 
 class ktools:
@@ -68,79 +69,66 @@ class ktools:
     self.m()
     self.m()
     
-  def E(self):
-    """"Print E using beepers"""
-    self.tl()
-    self.put5()
+  def fic(self) -> bool:
+    """"Front is clear"""
+    return front_is_clear()
+    
+  def fib(self) -> bool:
+    """"Front is blocked"""
+    return not self.fic()
+    
+  def ric(self) -> bool:
+    """Right is clear"""
     self.tr()
-    self.m()
-    self.put2()
-    self.tr()
-    self.m()
-    self.m()
-    self.tr()
-    self.put2()
-    self.m()
+    if self.fic():
+      self.tl()
+      return True
     self.tl()
-    self.m()
-    self.m()
-    self.tl()
-    self.m()
-    self.put2()
-    self.m()
-    self.m()
+    return False
 
-  def L(self):
-    self.tl()
-    self.put5()
-    self.ta()
-    self.m()
-    self.m()
-    self.m()
-    self.m()
-    self.tl()
-    self.m()
-    self.put2()
-    self.m()
-    self.m()
+  def rib(self) -> bool:
+    """Right is blocked"""
+    return not self.ric()
 
-  def L(self):
-    self.tl()
-    self.put5()
-    self.ta()
+  def mazemove(self):
+    """Maze move"""
+    if self.fib():
+      self.tl()
+    else:
+      self.m()
+      if self.ric():
+        self.tr()
+        self.m()
+        if self.ric():
+          self.tr()
+          self.m()
+    pass
     self.m()
     self.m()
     self.m()
-    self.m()
-    self.tl()
-    self.m()
-    self.put2()
-    self.m()
-    self.m()
-
-  def O(self):
-    self.tl()
-    self.put5()
-    self.tr()
-    self.m()
-    self.put2()
-    self.m()
-    self.tr()
-    self.put5()
-    self.tr()
-    self.m()
-    self.put2()
-    self.ta()
+    self.ric()
 
 
+
+
+
+
+
+
+
+
+    
 def main():
     """ Karel code goes here! """
     kt = ktools()
-    kt.h()
-    kt.E()
-    kt.L()
-    kt.L()
-    kt.O()
+    kt.m()
+    kt.tl()
+    kt.m()
+    kt.mazemove()
+    sleep(3)
+
+    kt.m()
+    
     pass
 
 
