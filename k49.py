@@ -106,14 +106,11 @@ class ktools:
     self.m()
     self.m()
     self.m()
-    self.ric()
-
-
-
-
-
-
-
+    self.tl()
+    self.m()
+    self.tr()
+    self.m()
+    self.
 
 
 

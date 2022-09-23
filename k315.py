@@ -68,7 +68,7 @@ class ktools:
     self.tr()
     self.m()
     self.put5()
-    self.put()
+    self.ta()
     
 def main():
     """ Karel code goes here! """

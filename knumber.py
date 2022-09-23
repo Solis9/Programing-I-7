@@ -121,7 +121,37 @@ class ktools:
       self.m()
       self.put()
 
-  def q(self):
+  def o(self):
+      self.tl()
+      self.putm(5)
+      self.tr()
+      self.m()
+      self.putm(2)
+      self.m()
+      self.tr()
+      self.putm(5)
+      self.tr()
+      self.m()
+      self.putm(2)
+      self.ta()
+      self.mm(4)
+
+  def o(self):
+      self.tl()
+      self.putm(5)
+      self.tr()
+      self.m()
+      self.putm(2)
+      self.m()
+      self.tr()
+      self.putm(5)
+      self.tr()
+      self.m()
+      self.putm(2)
+      self.ta()
+      self.mm(4)
+
+  def o(self):
       self.tl()
       self.putm(5)
       self.tr()
@@ -145,7 +175,10 @@ def main():
     kt.putm(5)
     kt.tl()
     kt.mm(2)
-    kt.q()
+    kt.o()
+    kt.o()
+    kt.o()
+  
     pass
 
 
