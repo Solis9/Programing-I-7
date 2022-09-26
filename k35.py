@@ -71,68 +71,112 @@ class ktools:
   def E(self):
     """"Print E using beepers"""
     self.tl()
-    self.put5()
-    self.tr()
+    self.put2()
     self.m()
     self.put2()
-    self.tr()
+    self.m()
+    self.put()
+    self.tl()
+    self.tl()
+    self.tl()
+    self.m()
+    self.put()
+    self.m()
+    self.put()
+    self.tl()
+    self.tl()
+    self.tl()
     self.m()
     self.m()
-    self.tr()
-    self.put2()
+    self.tl()
+    self.tl()
+    self.tl()
+    self.put()
+    self.m()
+    self.put()
     self.m()
     self.tl()
     self.m()
     self.m()
     self.tl()
     self.m()
-    self.put2()
+    self.put()
+    self.m()
+    self.put()
     self.m()
     self.m()
 
   def L(self):
     self.tl()
-    self.put5()
-    self.ta()
+    self.put2()
+    self.m()
+    self.put2()
+    self.m()
+    self.put()
+    self.tl()
+    self.tl()
     self.m()
     self.m()
     self.m()
     self.m()
     self.tl()
     self.m()
-    self.put2()
+    self.put()
+    self.m()
+    self.put()
     self.m()
     self.m()
 
   def L(self):
     self.tl()
-    self.put5()
-    self.ta()
+    self.put2()
+    self.m()
+    self.put2()
+    self.m()
+    self.put()
+    self.tl()
+    self.tl()
     self.m()
     self.m()
     self.m()
     self.m()
     self.tl()
     self.m()
-    self.put2()
+    self.put()
+    self.m()
+    self.put()
     self.m()
     self.m()
 
   def O(self):
     self.tl()
-    self.put5()
-    self.tr()
-    self.m()
     self.put2()
     self.m()
-    self.tr()
-    self.put5()
-    self.tr()
-    self.m()
     self.put2()
-    self.ta()
+    
+    self.m()
+    self.put()
+    self.m()
+    self.put()
+    self.m()
+    self.put()
+    
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
 def main():
     """ Karel code goes here! """
     kt = ktools()

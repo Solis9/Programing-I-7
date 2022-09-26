@@ -91,7 +91,7 @@ class ktools:
 
   def mazemove(self):
     """Maze move"""
-    if self.fib(:)
+    if self.fib():
       self.tl()
     else:
       self.m()
@@ -103,19 +103,19 @@ class ktools:
           self.m()
     pass
 
-def mm(self, num):
-    for number in range(0, num)
+  def mm(self, num):
+    for number in range(0, num):
       self.m()
 
-def putm(self, num):
-  """Put Multiple"""
-    for i in range(num - 1)
+  def putm(self, num):
+    """Put Multiple"""
+    for i in range(num - 1):
       self.put()
       self.m()
     self.put()
 
-def pickm(self, num)
-  """Pick Multiple"""
+  def pickm(self, num):
+    """Pick Multiple"""
     for _ in range(num - 1):
       self.put()
       self.m()
