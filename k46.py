@@ -123,9 +123,18 @@ class ktools:
 
   def a(self):
     self.tl()
-
-
-  
+    self.mm(2)
+    self.tr()
+    self.m()
+    self.tr()
+    self.mm(2)
+    self.ta()
+    self.m()
+    self.tr()
+    self.m()
+    self.tr()
+    self.m()
+    self.tl()
     
 def main():
     """ Karel code goes here! """
