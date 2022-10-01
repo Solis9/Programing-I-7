@@ -117,9 +117,9 @@ class ktools:
   def pickm(self, num):
     """Pick Multiple"""
     for _ in range(num - 1):
-      self.put()
+      self.pick()
       self.m()
-      self.put()
+    self.pick()
 
 
 

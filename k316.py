@@ -103,61 +103,31 @@ class ktools:
           self.m()
     pass
 
-  def mm(self, num):
-    for number in range(0, num):
-      self.m()
-
-  def putm(self, num):
-    """Put Multiple"""
-    for i in range(num - 1):
-      self.put()
-      self.m()
-    self.put()
-
-  def pickm(self, num):
-    """Pick Multiple"""
-    for _ in range(num - 1):
-      self.put()
-      self.m()
-      self.put()
-
   def a(self):
-    self.tl()
-    self.mm(2)
-    self.tr()
     self.m()
-    self.tr()
-    self.mm(2)
-    self.ta()
     self.m()
-    self.tr()
-    self.m()
-    self.tr()
     self.m()
     self.tl()
     self.m()
-    self.tl()
-    self.mm(3)
-    self.tr()
     self.m()
     self.tr()
-    self.mm(3)
+    self.put2()
+    self.m()
+    self.put2()
     self.tl()
     self.m()
-    self.tl()
-    self.mm(2)
-    self.tr()
+    self.put2()
     self.m()
-    self.tr()
-    self.mm(2)
+    self.put()
     self.tl()
     self.m()
-    self.tl()
-    self.mm(2)
-    self.tr()
+    self.put2()
     self.m()
-    self.tr()
-    self.mm(2)
+    self.put()
+    self.tl()
+    self.m()
+    self.put2()
+    self.m()
     self.tl()
     
 def main():
