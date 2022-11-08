@@ -103,49 +103,7 @@ class ktools:
           self.tr()
           self.m()
     pass
-    self.m()
-    self.m()
-    self.m()
-    self.tl()
-    self.m()
-    self.tr()
-    self.m()
-    self.m()
-    self.tr()
-    self.m()
-    self.m()
-    self.m()
-    self.m()
-    self.m()
-    self.tr()
-    self.m()
-    self.tl()
-    self.m()
-    self.tl()
-    self.m()
-    self.tr()
-    self.m()
-    self.m()
-    self.tr()
-    self.m()
-    self.tr()
-    self.m()
-    self.tl()
-    self.m()
-    self.m()
-    self.m()
-    self.m()
-    self.m()
-    self.m()
-    self.tr()
-    self.m()
-    self.tr()
-    self.m()
-    self.m()
-    self.tr()
-    self.m()
-    self.tr()
-    self.m()
+
     
 def main():
     """ Karel code goes here! """
@@ -159,7 +117,10 @@ def main():
     kt.m()
     
     pass
-
+    
+    for _ in range(3):
+      kt.mazemove()
+      kt.m()
 
 if __name__ == "__main__":
     run_karel_program()

@@ -121,36 +121,48 @@ class ktools:
       self.m()
       self.put()
 
-  def o(self):
-      self.tl()
-      self.putm(5)
-      self.tr()
+  def SOB(self) -> bool:
+    """Standing on Beeper"""
+    return beepers_present()
+    
+  def jump(self):
+    """Jump for 510"""
+    while self.fic():
       self.m()
-      self.putm(2)
+    self.tl()
+    while self.rib():
       self.m()
-      self.tr()
-      self.putm(5)
-      self.tr()
+    self.tr()
+    self.m()
+    self.tr()
+    while self.fic():
       self.m()
-      self.putm(2)
-      self.ta()
-      self.mm(4)
+    self.tl()
 
+  def find(self):
+    """Find for 515"""
+    while not facing_north():
+      self.tl()
+    self.m()
+    if not self.SOB():
+      self.tl()
+      self.m()
+      self.tl()
+      self.m()
+    for _ in range(2):
+      if not self.SOB():
+        self.m()
+        self.tl()
+        self.m()
+    pass
       
 def main():
     """ Karel code goes here! """
     kt = ktools()
-    kt.tl()
-    kt.mm(5)
-    kt.ta()
-    kt.putm(5)
-    kt.tl()
-    kt.mm(2)
-    kt.o()
-  
+    
     pass
-    for _ in range(8):
-      kt.o()
+
 
 if __name__ == "__main__":
     run_karel_program()
+  
